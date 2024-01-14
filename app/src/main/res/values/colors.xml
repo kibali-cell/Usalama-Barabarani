@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary">#1A60A6</color>
+    <color name="headingBg">#EAEEF7</color>
+    <color name="background">#FDFDFF</color>
+    <color name="lightgray">#F1F4FB</color>
+    <color name="highlight">#7599BD</color>
+    <color name="topic">#D8E3F7</color>
+    <color name="fontcolor">#191919</color>
+    <color name="iconcolor">#43484E</color>
+    <color name="iconbackground">#EAEEF7</color>
+    <color name="active">#D8E3F7</color>
+    <color name="heading">#D3E4FE</color>
+</resources>

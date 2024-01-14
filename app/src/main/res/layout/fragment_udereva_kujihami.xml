@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UderevaKujihamiFragment"
+    android:background="@color/white">
+
+
+    <TextView
+        android:id="@+id/ainaHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Udereva Wa Kujihami"
+        android:textColor="@color/primary"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@color/headingBg"
+        android:padding="20dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ainaHeading"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/heading">
+            <androidx.cardview.widget.CardView
+                android:layout_width="409dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                app:cardBackgroundColor="@color/heading"
+                app:cardCornerRadius="20dp"
+                android:elevation="8dp"
+                android:id="@+id/maanaHdg"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/amriImg"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/book"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+
+                    <TextView
+                        android:id="@+id/amriTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:text="Maana Ya Udereva Wa Kujihami"
+                        android:textColor="@color/primary"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"/>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/MaanaKujihami"
+                android:id="@+id/kujihamiMaana"
+                android:layout_below="@+id/maanaHdg"
+                android:padding="10dp"
+                android:textColor="@color/fontcolor"
+                android:textSize="18sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Falsafa ya udereva wa kujihami inamfanya dereva awe anaendesha gari kwa kutambua hatari zinazoweza kujitokeza na mbinu za uzuiaji wa athari hizo."
+                android:id="@+id/kujihamiMaelezo"
+                android:padding="10dp"
+                android:paddingTop="0dp"
+                android:layout_below="@+id/kujihamiMaana"
+                android:textColor="@color/fontcolor"
+                android:textSize="18sp"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/heading"
+                android:id="@+id/nguzoPart">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="409dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                app:cardBackgroundColor="@color/heading"
+                app:cardCornerRadius="20dp"
+                android:elevation="8dp"
+                android:id="@+id/nguzoKujihamiHdg"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/section2"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/essay"/>
+
+                    <TextView
+                        android:id="@+id/nguzoKujihami"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:text="Nguzo Za Udereva wa Kujihami"
+                        android:textColor="@color/primary"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"/>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Katika Udereva wa Kujihami Unatakiwa Kufanya Mambo Yafuatayo :-"
+                android:id="@+id/kujihamiNguzoDesc"
+                android:layout_below="@+id/nguzoKujihamiHdg"
+                android:padding="10dp"
+                android:textColor="@color/fontcolor"
+                android:textSize="18sp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nguzoPart1"
+                    android:layout_below="@+id/kujihamiNguzoDesc">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nguzo1"
+                        android:id="@+id/nguzo1"
+                        android:padding="10dp"
+                        android:paddingTop="0dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nguzo1Desc"
+                        android:id="@+id/nguzo1Desc"
+                        android:layout_below="@+id/nguzo1"
+                        android:padding="10dp"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="18sp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nguzoPart2"
+                    android:layout_below="@+id/nguzoPart1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nguzo2"
+                        android:id="@+id/nguzo2"
+                        android:padding="10dp"
+                        android:paddingTop="0dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nguzo2Desc"
+                        android:id="@+id/nguzo2Desc"
+                        android:layout_below="@+id/nguzo2"
+                        android:padding="10dp"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="18sp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nguzoPart3"
+                    android:layout_below="@+id/nguzoPart2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nguzo3"
+                        android:id="@+id/nguzo3"
+                        android:padding="10dp"
+                        android:paddingTop="0dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nguzo2Desc"
+                        android:id="@+id/nguzo3Desc"
+                        android:layout_below="@+id/nguzo3"
+                        android:padding="10dp"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="18sp"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nguzoPart4"
+                    android:layout_below="@+id/nguzoPart3">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nguzo4"
+                        android:id="@+id/nguzo4"
+                        android:padding="10dp"
+                        android:paddingTop="0dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nguzo4Desc"
+                        android:id="@+id/nguzo4Desc"
+                        android:layout_below="@+id/nguzo4"
+                        android:padding="10dp"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="18sp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nguzoPart5"
+                    android:layout_below="@+id/nguzoPart4">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nguzo5"
+                        android:id="@+id/nguzo5"
+                        android:padding="10dp"
+                        android:paddingTop="0dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nguzo5Desc"
+                        android:id="@+id/nguzo5Desc"
+                        android:layout_below="@+id/nguzo5"
+                        android:padding="10dp"
+                        android:textColor="@color/fontcolor"
+                        android:textSize="18sp"/>
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nguzoPart"
+                android:id="@+id/sifaDereva">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="409dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:cardBackgroundColor="@color/heading"
+                    app:cardCornerRadius="20dp"
+                    android:elevation="8dp"
+                    android:id="@+id/sifaDerevaHdg"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:id="@+id/sifaImg"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:layout_gravity="center"
+                            android:src="@mipmap/essay"/>
+
+                        <TextView
+                            android:id="@+id/sifaTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:text="Sifa za Udereva wa Kujihami"
+                            android:textColor="@color/primary"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sifa1"
+                    android:layout_below="@id/sifaDerevaHdg"
+                    android:id="@+id/sifa1"
+                    android:padding="10dp"
+                    android:paddingTop="0dp"
+                    android:textColor="@color/fontcolor"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sifa1"
+                    android:text="@string/sifa2"
+                    android:id="@+id/sifa2"
+                    android:padding="10dp"
+                    android:paddingTop="0dp"
+                    android:textColor="@color/fontcolor"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sifa3"
+                    android:layout_below="@+id/sifa2"
+                    android:id="@+id/sifa3"
+                    android:padding="10dp"
+                    android:paddingTop="0dp"
+                    android:textColor="@color/fontcolor"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sifa4"
+                    android:layout_below="@+id/sifa3"
+                    android:id="@+id/sifa4"
+                    android:padding="10dp"
+                    android:paddingTop="0dp"
+                    android:textColor="@color/fontcolor"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sifa5"
+                    android:layout_below="@+id/sifa4"
+                    android:id="@+id/sifa5"
+                    android:padding="10dp"
+                    android:paddingTop="0dp"
+                    android:textColor="@color/fontcolor"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sifa5"
+                    android:text="@string/sifa6"
+                    android:id="@+id/sifa6"
+                    android:padding="10dp"
+                    android:paddingTop="0dp"
+                    android:textColor="@color/fontcolor"
+                    android:textSize="18sp"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+</RelativeLayout>

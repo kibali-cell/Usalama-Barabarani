@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/headingTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clips"
+        android:textColor="@color/primary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@color/headingBg"
+        android:padding="20dp"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/headingTextView">
+
+        <LinearLayout
+            android:id="@+id/videosContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/description"
+                android:textStyle="italic"
+                android:textSize="14sp"
+                android:textColor="@color/primary"
+                android:layout_margin="5dp"
+                android:text="Click The Video to play..."/>
+
+            <VideoView
+                android:id="@+id/videoView1"
+                android:layout_width="400dp"
+                android:layout_gravity="center"
+                android:layout_height="200dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jinsi ya Kutumia Mstelingi wakati wa kuendesha"
+                android:textColor="@color/primary"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="10dp"/>
+
+            <VideoView
+                android:id="@+id/videoView2"
+                android:layout_height="200dp"
+                android:layout_width="400dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aina za ajali zitokeazo mara kwa mara"
+                android:textColor="@color/primary"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="10dp"/>
+
+            <VideoView
+                android:id="@+id/videoView3"
+                android:layout_width="400dp"
+                android:layout_gravity="center"
+                android:layout_height="200dp"
+                android:background="#0000"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jinsi ya Kuendesha Gari la Manual"
+                android:textColor="@color/primary"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="10dp"/>
+
+            <VideoView
+                android:id="@+id/videoView4"
+                android:layout_width="400dp"
+                android:layout_gravity="center"
+                android:layout_height="200dp"
+                android:background="#0000"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jinsi ya Kuendesha Gari la Automatic"
+                android:textColor="@color/primary"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="10dp"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

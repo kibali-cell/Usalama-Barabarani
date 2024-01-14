@@ -1,0 +1,255 @@
+<resources>
+    <string name="app_name">Usalama Barabarani</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="sign_title">
+        <item>Stop Sign</item>
+        <item>Kivuko Mbele</item>
+        <item>Muinuko</item>
+        <item>Kona mbili kulia</item>
+        <item>Kona mbili kushoto</item>
+        <item>Simama</item>
+    </string-array>
+
+    <string-array name="description">
+        <item>Mita kadhaa mbele simama</item>
+        <item>Mita kadhaa mbele kuna Kivuko cha waenda kwa miguu</item>
+        <item>Mita kadhaa mbele kuna muinuko</item>
+        <item>punguza spidi kuna Kona mbili kulia</item>
+        <item>punguza spidi kuna Kona mbili kushoto</item>
+        <item>Embu simama asee!</item>
+    </string-array>
+
+
+    <!--    <string-array name="sign_title">-->
+    <string name="option_a">Alama za Amri</string>
+    <string name="option_b">Alama za Onyo au Tahadhari</string>
+    <string name="option_c">Alama za Maelekezo</string>
+    <string name="option_d">Alama za Taarifa za Ziada</string>
+    <string name="option_e">Alama za Usuli na Michoro Barabarani</string>
+    <string name="option_f">Maelekezo ya Askari wa Usalama Barabarani</string>
+    <!--    </string-array>-->
+
+    <!--    <string-array name="description">-->
+    <string name="option_1">Alama hizi hutoa amri kwa watumiaji wa barabara juu ya jambo kulingana na sehemu husika, huwa katika umbo la duara.</string>
+    <string name="option_2">Alama hizi hutahadharisha watumiaji wa barabaran juu ya jambo au hatari iliyopo mbeleni. Alama hizi huwa katika umbo la pembe tatu.</string>
+    <string name="option_3">Alama hizi hutoa maelekezo kuu ya utumiaji bora wa barabara au uelekeo, na huwa katika umbo la pembe nne na mara nyingi kwa rangi ya bluu, kijani au nyekundu.</string>
+    <string name="option_4">Hili ni kundi la alama zinazotoa taarifa za nyongeza kwenye alama kuu(primary signs). Mara nyingi alama hizi hazikai peke yake. Ni lazima kuwa na alama kuu(primary sign) halafu chini yake kunawekwa plate ndogo yenye taarifa ya Ziada.</string>
+    <string name="option_5">Alama hizi huchorwa sakafuni kwa rangi nyeupe na kutoa maelekezo mbalimbali juu ya matumiz bora ya barabara na maumbo yake hutofautiana kulingana na matumizi ya alama.</string>
+    <string name="option_6">Ni maelekezo yatolewayo na Askari wakati wa kuongoza vyombo vya usafiri</string>
+    <!--    </string-array>-->
+
+    <string name="MaanaKujihami">Ni udereva wa kuzuia ajali zote zinazozuilika, hata zile ambazo zingetokea kwa makosa ya wengine au hali zisizo kubalika.</string>
+
+    <string name="nguzo1">1. KUANGALIA (SEE)</string>
+    <string name="nguzo2">2. KUTAMBUA (IDENTIFY)</string>
+    <string name="nguzo3">3. TABIRI (PREDICT)</string>
+    <string name="nguzo4">4. KUAMUA (DECIDE)</string>
+    <string name="nguzo5">5.  KUTEKELEZA</string>
+
+
+    <string name="nguzo1Desc">Kabla ya kuendesha na wakati wa kuendesha ni muhimu.
+    Uangalizi mzuri huchukua picha halisi ya hali ya barabara na kuipeleka kwenye ubongo kwa ajili ya utekelezaji.
+    Vile vile uangaliaji kabla ya safari, husaidia katika uangaliaji uliomzuri wa gari kwa vifaa mbali mbali.</string>
+
+    <string name="nguzo2Desc">Usithubutu kufikiri hata kidogo kuwa kila kitu kitakuwa Sawa sawa, zingatia hatari na kuchukua hatua ya kuziepuka zitatokea kwa mfano : umetambua kuwa mbele kuna watoto wa shule wapo kando ya barabara, hivyo utatabiri kuwa wanaweza kuvuka barabara bila kuangalia magari vizuri.
+Hivyo tabiri maeneo!</string>
+
+    <string name="nguzo3Desc">Jiulize mwenyewe ni kitu gani kinaweza kutokea kwa kile ulichokitambua?
+Kwa mfano umetambua kuwa mbele kuna watoto wanacheza pembezoni mwa barabara, hivyo utabiri kuwa wanaweza kuvuka barabara bila kuangalia magari, hivyo tabiri maeneo ya hatari kwa kutumia macho yako vizuri.</string>
+    <string name="nguzo4Desc">Dereva wa kujihami anatakiwa kutoa maamuzi ya haraka, kwani maamuzi yanapocheleweshwa, yanaweza kuleta madhara /yaani kusababisha ajali.</string>
+    <string name="nguzo5Desc">Maamuzi yeyote yanayotolewa na dereva, hayana budi kuendana na utekelezaji, kwa mfano ;ikiwa dereva ameamua kupunguza mwendo, basi hana budi kupunguza mwendo huo, kwani kuendelea kwenda kwa speed ya juu wakati mazingira hayaruhusu, uwezekano wa kupata ajali ni mkubwa.</string>
+
+    <string name="sifa1">1. Ni dereva anaejituma kuzielewa na kuziheshimu sheria kanuni na taratibu za usalama barabarani</string>
+    <string name="sifa2">2. Haendeshi chombo cha moto katika hali zinzaoweza kusababisha ajali kwake mwenyewe na watumiaji wengine wa barabara</string>
+    <string name="sifa3">3. Uwezo wa kufuatilia magari yanayomzunguka: Dereva huyu anajitahidi kuwa na uelewa wa magari yaliyopo mbele yake, nyuma yake, na pande zote. Anakuwa na uwezo wa kujua hali ya barabara na kuchukua hatua zinazofaa kuzuia ajali.</string>
+    <string name="sifa4">4. Muda wote yupo tayari kutoa nafasi kwa watumia barabara wengine na huchukua hatua zinazo stahiki ajali isitokee</string>
+    <string name="sifa5">5. Ni mvumilivu wa kero za watumia barabara wengine na huchukulia swala hilo kama sehemu ya kawaida ya udereva, muda wote yupo macho na hali zisizo kubalika.</string>
+    <string name="sifa6">6. Ni dereva ambae haruhusu umakini wake kuchukuliwa na vizuizi kama matumizi ya simu wakati wa kuendesha, watoto, kula na matumizi “ya make up”</string>
+
+
+    <string name="temperature">Ukiona taa hii imewaka kwenye dashbodi ya gari, ina maana injini ya gari lako inapata joto kubwa kupita kiwango kinachoruhusiwa. Hivyo egesha gari pembeni, zima injini ya gari, iache injini ya gari ipoe kwa muda wa angalau dakika 40. Fungua mfuniko wa maji ya kupoza injini (coolant) na uweke maji ya kutosha, kisha funika mfuniko washa gari na uangalie tena taa hii kama imezimika. Kama taa haijazimika tafadhali usiendelee na safari na peleka gari lako kwa fundi magari (auto mechanic).</string>
+    <string name="OilPressure">Ukiona taa hii imewaka kwenye dashbodi ya gari, ujue kua oil ya injini ya gari lako ipo pungufu ya ujazo unaotakiwa. Hivyo fungua boneti la gari, kagua kijiti cha oil kuhakikisha kua ni kweli imepungua ujazo. Ongeza ujazo wa oil na pima hadi ifikie kiwango kinachohitajika, funga boneti na angalia kama taa hii imezimika. Endapo taa haijamizika tafadhali peleka gari lako kwa fundi magari (auto mechanic)</string>
+    <string name="EngineCheck">Ukiona taa hii imewaka kwenye dashbodi ya gari, ujue kuna tatizo kwenye injini, tafadhali usiendelee na safari. Peleka gari lako kwa fundi wa magari aipime na kurekebisha tatizo lililopo kwenye injini</string>
+    <string name="TirePressure">Ukiona taa hii imewaka kwenye dashbodi ya gari, ujue tairi moja au zaidi ya tairi moja limepungua upepo. Hivyo, peleka gari kwa fundi matairi akague kama kuna pancha kwenye tairi aweze kurekebisha na kujaza upepo unaohitajika kwenye matairi ya gari lako</string>
+    <string name="BrakeSystem">Ukiona taa hii imewaka kwenye dashbodi ya gari, ujue breki ya dharura/breki ya mkono (handbrake) ipo imewekwa, tafadhali ondoa breki hii kabla ya kuendesha gari. Kama taa inawaka na breki hii ya mkono/dharura imeondolewa, basi kagua mafuta ya breki kama yapo ujazo unaohitajika. kama mafuta ya breki yapo ujazo sawa, ujue kuna tatizo kwenye mfumo wa breki tafadhali peleka gari kwa fundi magari akague tatizo na kurekebisha</string>
+    <string name="AbsWarning">(Antilock Braking System), ukiona taa hii imewaka kwenye dashbodi ya gari, ujue breki hii haifanyi kazi, ABS ni breki ya ziada ambayo lengo kuu ni kukusaidia kusimama ghafla au unapohitaji kusimama kwenye matope, ingawaje breki ya kawaida inafanya kazi, ni vizuri upeleke gari kwa fundi arekebishe kasoro hii</string>
+    <string name="Stability">Ukiona taa hii imewaka kwenye dashbodi ya gari, ujue Gari lako limeweka nguvu kwenye mfumo wa matairi ili matairi ya gari yasiteleze na kukutoa nje ya barabara kwenye barabara inayoteleza au yenye matope</string>
+    <string name="TransmissionTemp">Ukiona taa hii imewaka kwenye dashbodi ya gari, ujue joto kwenye mfumo wa gia, hivyo angalia kama mafuta ya transmission/mafuta ya gia box kama yapo ujazo unaohitajika, kama yapo ujazo sawa tafadhali peleka gari kwa fundi magari akague gari lako.</string>
+    <string name="Battery">Ukiona taa hii imewaka kwenye dashbodi ya gari, ujue mfumo wa kuchaji betri haupo sawa na injini haipati nguvu ya kutosha. Hii husababishwa na nyaya kutofungwa vizuri kwenye terminal za betri au betri mbovu/imeisha muda wake. Tafadhali kaza terminal za betri vizuri na uangalie taa hii kama inawaka, kama inaendelea kuwaka tafadhali nunua betri mpya inayolingana nguvu na gari lako na ufunge</string>
+    <string name="Airbag">Ukiona taa hii inawaka kwenye dashbodi ya gari, ujue kuna tatizo kwenye mfumo wa puto la usalama la kuzuia ajali. tafadhali peleka gari kwa fundi magari arekebishe tatizo hili</string>
+    <string name="Fuel">ukiona taa hii inawaka kwenye dashibodi ya gari lako, ujue mafuta kwenye tenki yamepungua ujazo hivyo gari itazimika muda wowote. Epuka kuendesha gari ikiwa taa hii inawaka. Unashauriwa mafuta (gasoline/diesel) yawe angalau robo tenki ili pampu ya mafuta isiharibike haraka</string>
+    <string name="Doors">Ukiona taa hii imewaka kwenye dashbodi ya gari, ujue kuna mlango haujafungwa vizuri. hakikisha milango yote imefungwa ikiwemo mlango wa mizigo nyuma ya gari.Kwani taa hii ikiendelea kuwaka humaliza chaji ya betri na kushindwa kuwasha gari baadae</string>
+
+    <string name="qn1">Eleza umuhimu wa kulikagua gari lako asubuhi au kabla ya kuendesha?</string>
+    <string name="qn2">Ishara za barabarani zina faida gani?</string>
+    <string name="qn3">Ni kwa njia gani unaweza kugundua kasoro kwenye gari?</string>
+    <string name="qn4">Taja maeneo ambayo hutakiwi kulipita gari lililo mbele yako?</string>
+    <string name="qn5">Wakati unaendesha gari likiwaka moto utafanyaje?</string>
+    <string name="qn6">Matengenezo ya gari ni yapi?</string>
+    <string name="qn7">Ni sheria ipi unatakiwa kufuata unapoingia mzunguko wa barabara?</string>
+    <string name="qn8">Je! unaweza kurudisha gari nyuma toka barabara ndogo kuelekea barabara kuu?</string>
+    <string name="qn9">Ni vyombo gani vya moto haviruhusiwi kutumia barabara kuu?</string>
+    <string name="qn10">Ni vifaa gani unatakiwa kubeba kwenye gari?</string>
+    <string name="qn11">Ni zipi sehemu kuu tatu (3) za gari?</string>
+    <string name="qn12">Ni wakati gani hutakiwi kuendesha gari?</string>
+    <string name="qn13">Ni upi Ukaguzi wa gari asubuhi au kabla ya kuanza safari?</string>
+    <string name="qn14">Vitu gani vya gari lako vinatakiwa kua safi muda wote?</string>
+
+
+    <string name="ans1">Ili kuepuka kutokea ajali au kuharibika gari na pia kuepuka kuishiwa mafuta mahali ambapo ni vigumu kupata msaada</string>
+    <string name="ans2">zinamwezesha dereva kujua hali ya barabara ilivyo na hivyo kumsaidia kufanya maamuzi sahihi</string>
+    <string name="ans3">Unaweza kugundua kasoro kwenye gari kwa kunusa, kusikia, na kuona</string>
+    <string name="ans4">Sehemu ambazo huwezi kuona mbali mbele yako, sehemu ya daraja, sehemu ambazo ni karibu na makutano ya barabara, kwenye kona, sehemu ambazo watembea kwa miguu wanakatisha barabara, sehemu zenye mstari mweupe ulionyooka katikati ya barabara</string>
+    <string name="ans5">Nitasimamisha gari na kuzima moto kwa kutumia dawa ya kuzimia moto (dry chemical powder fire extinguisher)</string>
+    <string name="ans6">Ni kubadili oil ya injini, kubadili oil filter, grisi na kukaza nati zilizolegea kwenye gari</string>
+    <string name="ans7">Toa kipaumbele kwa watumia barabara walio kulia kwako</string>
+    <string name="ans8">Hapana, marufuku kurudisha gari nyuma kutoka barabara ndogo kuelekea barabara kuu. Tumia kanuni ya kugeuza gari kwa vituo vitatu yaani three point turning</string>
+    <string name="ans9">Magari ya kujifunzia, vyombo vya moto vyenye injini chini ya 50cc, mikokoteni inayovutwa na farasi pamoja na vyombo vyote vyenye uwezo wa kwenda chini ya 50kph</string>
+    <string name="ans10">Jeki, tairi la spea, wheel spanner, tools box, kamba au cheni ya kuvuta gari, sanduku la huduma ya kwanza (first aid box)</string>
+    <string name="ans11">Sehemu kuu tatu za gari ni Breki, Usukani na Matairi ya mbele</string>
+    <string name="ans12">Wakati umelewa pombe au madawa ya kulevya, wakati umechoka au unasinzia</string>
+    <string name="ans13">Ukaguzi wa gari ni, kupima Maji ya rejeta, oil ya injini, mafuta ya breki na klachi, mafuta ya usukani, bomba la kutolea moshi, upepo na matairi</string>
+    <string name="ans14">Taa za gari, viakisi mwanga, madirisha, vioo vya kuona nyuma ya gari, na kibao cha namba za gari</string>
+
+    <string name="amri1">Simama</string>
+    <string name="amri2">Marufuku kupiga honi au kelele eneo hili</string>
+    <string name="amri3">Hauruhusiwi kusimama kandokando mwa barabara na kuomba lifti kwa magari yapitayo eneo hili</string>
+    <string name="amri4">Magari yabebayo bidhaa hatari hayaruhusiwi eneo hili</string>
+    <string name="amri5">Marufuku kuendesha gari kwa mwendo unaozidi km.50 kwa saa</string>
+    <string name="amri6">Barabara yenye kipaumbele</string>
+    <string name="amri7">Mwisho wa barabara yenye kipaumbele</string>
+    <string name="amri8">Nenda ya muda</string>
+    <string name="amri9">Wape kipaumbele wanaojongea upande wa pili</string>
+    <string name="amri10">Usipite hapa bila kibali</string>
+    <string name="amri11">Barabara imefungwa kwa aina zote za magari</string>
+    <string name="amri12">Vyombo vyote vya moto haviruhusiwi</string>
+    <string name="amri13">Pikipiki na mopedi haviruhusiwi</string>
+    <string name="amri14">Magari yenye trela na semitrela hayaruhusiwi</string>
+    <string name="amri15">Waenda kwa miguu hawaruhusiwi kupita hapa</string>
+    <string name="amri16">Wapanda farasi hawaruhusiwi</string>
+    <string name="amri17">Mikokoteni inayovutwa na wanyama haviruhusiwi kupita hapa</string>
+    <string name="amri18">Upana wa gari usizidi mita 2</string>
+    <string name="amri19">Upana wa gari usizidi mita 2</string>
+    <string name="amri20">Kimo cha gari kisizidi mita 4.4</string>
+    <string name="amri21">Urefu wa gari usizidi mita 9.9</string>
+    <string name="amri22">Uzito wa ekseli moja usizidi tani 2</string>
+    <string name="amri23">Uzito wa ekseli mbili usizidi tani 12</string>
+    <string name="amri24">Marufuku kupinda kushoto</string>
+    <string name="amri25">Marufuku kupinda kulia</string>
+    <string name="amri26">Marufuku kupinda na kurudi kuelekea Maruf ulipotoka</string>
+    <string name="amri27">Marufuku kulipita gari jingine</string>
+    <string name="amri28">Mwisho wa amri inayokataza gari moja kulipita lingine</string>
+    <string name="amri29">Marufuku gari la mizigo kulipita gari lingine</string>
+    <string name="amri30">Mwisho wa amri inayokataza gari la mizigo kulipita gari lingine</string>
+    <string name="amri31">Marufuku kuendesha gari kwa mwendo unaozidi km.80 kwa saa</string>
+    <string name="amri32">Marufuku kusimamisha gari hapa</string>
+    <string name="amri33">Marufuku kuegesha gari hapa</string>
+    <string name="amri34">Unaruhusiwa kuelekea kushoto tu</string>
+    <string name="amri35">Unaruhusiwa kuelekea kulia tu</string>
+    <string name="amri36">Unaruhusiwa kupinda kuelekea kushoto tu</string>
+    <string name="amri37">Unaruhusiwa kupinda kuelekea kulia tu</string>
+    <string name="amri38">Unaruhusiwa kwenda moja kwa moja tu</string>
+    <string name="amri39">Unaruhusiwa kwenda moja kwa moja au kupinda kushoto tu</string>
+    <string name="amri40">Unaruhusiwa kwenda moja kwa moja au kupinda kulia tu</string>
+    <string name="amri41">Unaruhusiwa kupinda kushoto au kulia tu</string>
+    <string name="amri42">Pita upande huu kuelekea kushoto</string>
+    <string name="amri43">Pita upande huu kuelekea kulia</string>
+    <string name="amri44">Unaingia kwenye mzunguko</string>
+    <string name="amri45">Njia maalumu kwa ajili ya waenda kwa miguu lazima wapite hapa</string>
+    <string name="amri46">Njia maalumu kwa ajili ya waendesha baiskeli lazima wapite hapa</string>
+    <string name="amri47">Waenda kwa miguu na wapanda baiskeli lazima wapite hapa</string>
+    <string name="amri48">Kituo cha Taxi</string>
+    <string name="amri49">Kivuko cha waenda kwa miguu</string>
+    <string name="amri50">Sehemu ya kuegesha magari</string>
+    <string name="amri51">Sehemu ya kuegesha magari kwa muda maalumu</string>
+    <string name="amri52">Eneo limetengwa kwa ajili ya kusimama mabasi</string>
+    <string name="amri53">Eneo la kuegesha mabasi</string>
+    <string name="amri54">Barabara haiendelei/Mwisho wa barabara</string>
+    <string name="amri55">Barabara ya mwendo wa kasi</string>
+    <string name="amri56">Mwisho wa barabara ya mwendo kasi</string>
+    <string name="amri57">Eneo la makazi ya watu (Sehemu iliyojengeka)</string>
+    <string name="amri58">Umetoka eneo la makazi ya watu (lililojengeka)</string>
+
+
+    <string name="onyo1">Kuna kona ya hatari kuelekea kushoto</string>
+    <string name="onyo2">Kuna kona ya hatari kuelekea kulia</string>
+    <string name="onyo3">Kuna kona mbili za hatari ya kwanza inaelekea kushoto</string>
+    <string name="onyo4">Kuna kona mbili za hatari ya kwanza inaelekea kulia</string>
+    <string name="onyo5">Kuna mwinuko mkali</string>
+    <string name="onyo6">Kuna mteremko mkali</string>
+    <string name="onyo7">Kuna daraja jembamba</string>
+    <string name="onyo8">Barabara inapungua kutoka pande zote (kulia na kushoto)</string>
+    <string name="onyo9">Barabara inapungua kutoka kushoto</string>
+    <string name="onyo10">Barabara inapungua kutoka kulia</string>
+    <string name="onyo11">Kuna matuta barabarani</string>
+    <string name="onyo12">Kuna watu wanaofanya kazi barabarani</string>
+    <string name="onyo13">Barabara haikushindiliwa vizuri (Loose gravel)</string>
+    <string name="onyo14">Kuna uwezekano wa mawe kuporomoka kutoka upande wa kushoto wa barabara</string>
+    <string name="onyo15">Kuna uwezekano wa mawe kuporomoka kutoka upande wa kulia wa barabara</string>
+    <string name="onyo16">Barabara inateleza</string>
+    <string name="onyo17">Kuna daraja linalofunguka</string>
+    <string name="onyo18">Kuna ukingo wa mto au bahari</string>
+    <string name="onyo19">Barabara inapita kwenye mkondo wa maji</string>
+    <string name="onyo20">Barabara inapita kwenye handaki</string>
+    <string name="onyo21">Kuna makutano hatari ya barabara</string>
+    <string name="onyo22">Kuna makutano hatari ya barabara kama alama inavyoonyesha</string>
+    <string name="onyo23">Kuna mzunguko wa barabara</string>
+    <string name="onyo24">Yapo makutano yenye kipaumbele</string>
+    <string name="onyo25">Kuna taa za kuongoza magari barabarani</string>
+    <string name="onyo26">Msongamano wa magari</string>
+    <string name="onyo27">Kuna kivuko cha waenda kwa miguu</string>
+    <string name="onyo28">Kuna waenda kwa miguu kandokando mwa barabara</string>
+    <string name="onyo29">Kuna watoto wa shule/wadogo</string>
+    <string name="onyo30">Wapo waendesha baiskeli barabarani</string>
+    <string name="onyo31">Kuna wanyama wafugwao eneo hili</string>
+    <string name="onyo32">Kuna wanyama wa porini eneo hili</string>
+    <string name="onyo33">Barabara ni ya kuchangia kwa magari yanayokwenda na yanayojongea</string>
+    <string name="onyo34">Kuna kiwanja cha ndege</string>
+    <string name="onyo35">Kuna upepo mkali (unaokatisha barabara)</string>
+    <string name="onyo36">Kuna hatari isiyojulikana</string>
+    <string name="onyo37">Kuna lango linalofunguka na kufungwa au kizuizi</string>
+    <string name="onyo38">Kuna kivuko cha reli</string>
+    <string name="onyo39">Kivuko cha reli njia moja</string>
+    <string name="onyo40">Kivuko cha reli njia mbili</string>
+
+    <string name="maelekezo1">Jina la Mji (Morogoro)</string>
+    <string name="maelekezo2">Jina la Mto (Rufiji)</string>
+    <string name="maelekezo3">Alama ya mwelekeo (kabla ya makutano)</string>
+    <string name="maelekezo4">Alama ya mwelekeo (kabla ya mzunguko)</string>
+    <string name="maelekezo5">Alama ya mwelekeo (kwenye makutano)</string>
+    <string name="maelekezo6">Alama za kufuata (baada ya makutano)</string>
+    <string name="maelekezo7">Mfano wa mchepuko wa muda, kuelekea njia kuu Kibaha</string>
+    <string name="maelekezo8">Kituo cha huduma ya kwanza</string>
+    <string name="maelekezo9">Huduma ya simu</string>
+    <string name="maelekezo10">Kituo cha mafuta</string>
+    <string name="maelekezo11">Huduma ya malazi</string>
+    <string name="maelekezo12">Huduma ya chakula</string>
+    <string name="maelekezo13">Huduma ya viburudisho</string>
+    <string name="maelekezo14">Sehemu ya mandhari (picnic)</string>
+    <string name="maelekezo15">Sehemu ya kupiga kambi ya caravan(magari yanayotumika kama nyumba)</string>
+    <string name="maelekezo16">Bwawa au pwani ambapo unaweza kuogelea</string>
+    <string name="maelekezo17">Njia imeongezwa upande wa Kushoto</string>
+    <string name="maelekezo18">Mwisho wa njia ya Kushoto</string>
+    <string name="maelekezo19">Alama ya njia ya kuchagua mwanzoni (mfano)</string>
+
+
+    <string name="usuli1">Ishara ya usuli kumwongoza dereva hasa kwenye kona kali</string>
+    <string name="usuli2">Ishara ya usuli pande mbili kumwongoza dereva kwenye makutano ya aina ya T katika barabara</string>
+    <string name="usuli3">Ishara ya usuli kuonyesha mwelekeo hasa katika kona ambayo kuna mabadiliko ya mzunguko wa kona</string>
+    <string name="usuli4">Taa za kuongoza magari</string>
+    <string name="usuli5">Mstari wa amri unaokataza gari moja kulipita lingine sehemu ambazo muonekano ni hafifu (poor visibility)</string>
+    <string name="usuli6">Mstari wa onyo wakati barabara zinakaribia kukutana (makutano)</string>
+    <string name="usuli7">Mstari unaotenganisha njia katika barabara</string>
+    <string name="usuli8">Mstari unaotenganisha njia ya magari ya abiria kutoka njia zingine</string>
+    <string name="usuli9">Alama inayoonyesha mwisho wa mapana ya barabara na kukataza kuegesha magari pembeni mwa barabara</string>
+    <string name="usuli10">Alama inayoonyesha pembeni mwa barabara na kuruhusu uegeshaji wa magari pembeni mwa barabara</string>
+
+
+    <string name="askari1">Trafiki akisimamisha magari ya mbele na nyuma</string>
+    <string name="askari2">Trafiki akisimamisha magari ya mbele</string>
+    <string name="askari3">Trafiki akisimamisha magari ya nyuma</string>
+    <string name="askari4">Trafiki akiruhusu magari ya mbele</string>
+    <string name="askari5">Trafiki akiruhusu magari ya nyuma</string>
+
+</resources>

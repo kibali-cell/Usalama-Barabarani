@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".LearnFragment"
+    android:background="@color/white">
+
+
+    <TextView
+        android:id="@+id/ainaHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aina Za Alama na Michoro Barabarani"
+        android:textColor="@color/primary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@color/headingBg"
+        android:padding="20dp"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ainaHeading"
+        android:scrollbars="none">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:cardBackgroundColor="@color/background"
+        app:cardCornerRadius="20dp"
+        android:elevation="8dp"
+        android:id="@+id/option_a"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/amriImg"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@mipmap/simama"/>
+
+            <TextView
+                android:id="@+id/amriTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                app:layout_constraintStart_toEndOf="@id/amriImg"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:textColor="@color/primary"
+                android:text="@string/option_a" />
+
+            <TextView
+                android:id="@+id/amriDescription"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="@string/option_1"
+                android:textColor="@color/highlight"
+                android:textSize="12sp"
+                android:layout_marginStart="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/amriImg"
+                app:layout_constraintTop_toBottomOf="@+id/amriTitle"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:cardBackgroundColor="@color/background"
+        app:cardCornerRadius="20dp"
+        android:elevation="8dp"
+        android:id="@+id/option_b"
+        android:layout_below="@id/option_a"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/maelekezoImg"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@mipmap/onyo"/>
+
+            <TextView
+                android:id="@+id/maelekezoTitle"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                app:layout_constraintStart_toEndOf="@id/maelekezoImg"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:textColor="@color/primary"
+                android:text="@string/option_b" />
+
+            <TextView
+                android:id="@+id/maelekezoDescription"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="@string/option_2"
+                android:textColor="@color/highlight"
+                android:textSize="12sp"
+                android:layout_marginStart="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/maelekezoImg"
+                app:layout_constraintTop_toBottomOf="@+id/maelekezoTitle"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView> <androidx.cardview.widget.CardView
+    android:layout_width="409dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    app:cardBackgroundColor="@color/background"
+    app:cardCornerRadius="20dp"
+    android:elevation="8dp"
+    android:id="@+id/option_c"
+    android:layout_below="@id/option_b"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/onyoImg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@mipmap/kablayamzunguko"/>
+
+        <TextView
+            android:id="@+id/onyoTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            app:layout_constraintStart_toEndOf="@id/onyoImg"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="@color/primary"
+            android:text="@string/option_c" />
+
+        <TextView
+            android:id="@+id/onyoDescription"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="@string/option_3"
+            android:textColor="@color/highlight"
+            android:textSize="12sp"
+            android:layout_marginStart="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/onyoImg"
+            app:layout_constraintTop_toBottomOf="@+id/onyoTitle"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+    android:layout_width="409dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    app:cardBackgroundColor="@color/background"
+    app:cardCornerRadius="20dp"
+    android:elevation="8dp"
+    android:id="@+id/option_d"
+    android:layout_below="@id/option_c"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/taarifaImg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@mipmap/umbali"/>
+
+        <TextView
+            android:id="@+id/taarifaTitle"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            app:layout_constraintStart_toEndOf="@id/taarifaImg"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="@color/primary"
+            android:text="@string/option_d" />
+
+        <TextView
+            android:id="@+id/taarifaDescription"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="@string/option_4"
+            android:textColor="@color/highlight"
+            android:textSize="12sp"
+            android:layout_marginStart="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/taarifaImg"
+            app:layout_constraintTop_toBottomOf="@+id/taarifaTitle"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+    android:layout_width="409dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    app:cardBackgroundColor="@color/background"
+    app:cardCornerRadius="20dp"
+    android:elevation="8dp"
+    android:id="@+id/option_e"
+    android:layout_below="@id/option_d"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/usuliImg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@mipmap/usuli"/>
+
+        <TextView
+            android:id="@+id/usuliTitle"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            app:layout_constraintStart_toEndOf="@id/usuliImg"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="@color/primary"
+            android:text="@string/option_e" />
+
+        <TextView
+            android:id="@+id/usuliDescription"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="@string/option_5"
+            android:textColor="@color/highlight"
+            android:textSize="12sp"
+            android:layout_marginStart="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/usuliImg"
+            app:layout_constraintTop_toBottomOf="@+id/usuliTitle"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:cardBackgroundColor="@color/background"
+        app:cardCornerRadius="20dp"
+        android:elevation="8dp"
+        android:id="@+id/option_f"
+        android:layout_below="@id/option_e"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/trafficImg"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@mipmap/mbelesimama"/>
+
+            <TextView
+                android:id="@+id/trafficTitle"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                app:layout_constraintStart_toEndOf="@id/trafficImg"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:textColor="@color/primary"
+                android:text="@string/option_f" />
+
+            <TextView
+                android:id="@+id/trafficDescription"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="@string/option_6"
+                android:textColor="@color/highlight"
+                android:textSize="12sp"
+                android:layout_marginStart="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/trafficImg"
+                app:layout_constraintTop_toBottomOf="@+id/trafficTitle"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/source"
+        android:layout_margin="15dp"
+        android:layout_below="@+id/option_f"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/sourceTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chanzo: "
+            android:textColor="@color/primary"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/sourceDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wizara ya Ujenzi, Uchukuzi na Mawasiliano, “Mwongozo wa Usimikaji wa Lama za Barabarani”, Kitengo cha Usalama na Mazingira, 2009. Uk 5-15."
+            android:textColor="@color/primary"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
