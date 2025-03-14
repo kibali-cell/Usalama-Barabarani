@@ -32,7 +32,7 @@ Access professionally produced video tutorials covering essential driving skills
 - Night driving precautions
 
 <p align="center">
-  <img src="screenshots/Screenshot_20250221_175719.png" alt="Video Tutorials Screen" width="250"/>
+  <img src="screenshots/Screenshot_20250221_175719.jpg" alt="Video Tutorials Screen" width="250"/>
 </p>
 
 ### ❓ Knowledge Assessment Quizzes
@@ -54,7 +54,7 @@ Comprehensive guide to dashboard indicators including:
 - Interactive troubleshooting recommendations
 
 <p align="center">
-  <img src="screenshots/dashboard_alerts.jpg" alt="Dashboard Alerts Screen" width="250"/>
+  <img src="screenshots/lights.jpg" alt="Dashboard Alerts Screen" width="250"/>
 </p>
 
 ### 🛡️ Defensive Driving Techniques
