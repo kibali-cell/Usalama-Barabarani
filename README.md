@@ -10,11 +10,17 @@ Usalama Barabarani is a comprehensive Android application designed to support dr
   <img src="screenshots/Beige Minimalist Fashion Product Promotion Facebook Ad (2).png" alt="App Features Overview" width="600"/>
 </p>
 
+### 🏠 Home Page
+Navigate through the App with simple navigation design
+<p align="center">
+  <img src="screenshots/Screenshot_20250221_175711.jpg" alt="Home Screen" width="250"/>
+</p>
+
 ### 🚦 Road Signs Library
 Browse through an extensive collection of road signs categorized by type (warning, regulatory, informational). Each sign comes with detailed explanations of its meaning and the appropriate driver response.
 
 <p align="center">
-  <img src="screenshots/Screenshot_20250221_175711.png" alt="Home Screen" width="250"/>
+  <img src="screenshots/roadsigns.jpg" alt="Road Signs Screen" width="250"/>
 </p>
 
 ### 🎬 Interactive Video Tutorials
@@ -37,7 +43,7 @@ Test your understanding with interactive quizzes featuring:
 - Progress tracking and performance analytics
 
 <p align="center">
-  <img src="screenshots/Screenshot_20250221_175726.png" alt="Quiz Screen" width="250"/>
+  <img src="screenshots/Screenshot_20250221_175726.jpg" alt="Quiz Screen" width="250"/>
 </p>
 
 ### 🚨 Dashboard Alert Guide
@@ -48,7 +54,7 @@ Comprehensive guide to dashboard indicators including:
 - Interactive troubleshooting recommendations
 
 <p align="center">
-  <img src="screenshots/dashboard_alerts.png" alt="Dashboard Alerts Screen" width="250"/>
+  <img src="screenshots/dashboard_alerts.jpg" alt="Dashboard Alerts Screen" width="250"/>
 </p>
 
 ### 🛡️ Defensive Driving Techniques
@@ -59,7 +65,7 @@ Learn proactive safety strategies through:
 - Accident prevention techniques
 
 <p align="center">
-  <img src="screenshots/Screenshot_20250221_175735.png" alt="Defensive Driving Screen" width="250"/>
+  <img src="screenshots/Screenshot_20250221_175735.jpg" alt="Defensive Driving Screen" width="250"/>
 </p>
 
 ## 🚀 Getting Started
