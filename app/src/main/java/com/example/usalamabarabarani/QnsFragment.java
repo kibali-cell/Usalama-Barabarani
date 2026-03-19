@@ -63,6 +63,14 @@ public class QnsFragment extends Fragment {
             }
         });
 
+        binding.quizBtn.setOnClickListener(v -> {
+            requireActivity().getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.flFragment, new QuizFragment())
+                    .addToBackStack(null)
+                    .commit();
+        });
+
         return view;
     }
 }

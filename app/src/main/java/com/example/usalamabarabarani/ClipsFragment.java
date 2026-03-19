@@ -10,11 +10,19 @@ import android.widget.MediaController;
 import android.widget.TextView;
 import android.widget.VideoView;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ClipsFragment extends Fragment {
 
-    private VideoView videoView1, videoView2, videoView3, videoView4;
+    private VideoView mainVideoView;
+    private TextView currentTitleTextView;
+    private MediaController mediaController;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -22,89 +30,64 @@ public class ClipsFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_clips, container, false);
 
         TextView headingTextView = view.findViewById(R.id.headingTextView);
-        headingTextView.setText("Clips");  // Optional: Set heading text dynamically
+        headingTextView.setText("Clips");
 
-        videoView1 = view.findViewById(R.id.videoView1);
-        videoView2 = view.findViewById(R.id.videoView2);
-        videoView3 = view.findViewById(R.id.videoView3);
-        videoView4 = view.findViewById(R.id.videoView4);
+        mainVideoView = view.findViewById(R.id.mainVideoView);
+        currentTitleTextView = view.findViewById(R.id.currentClipTitle);
+        RecyclerView recyclerView = view.findViewById(R.id.clipsRecyclerView);
 
-        playVideo();
+        mediaController = new MediaController(requireContext());
+
+        List<Clip> clips = buildClips();
+
+        setupMainPlayer(clips.get(0));
+
+        recyclerView.setLayoutManager(new LinearLayoutManager(requireContext()));
+        recyclerView.setAdapter(new ClipsAdapter(clips, new OnClipClickListener() {
+            @Override
+            public void onClipClick(Clip clip) {
+                setupMainPlayer(clip);
+            }
+        }));
 
         return view;
     }
 
-    private void playVideo() {
-        // Set video resource IDs (replace with your video file names without extension)
-        int video1ResourceId = R.raw.mstelingi;
-        int video2ResourceId = R.raw.ajali;
-        int video3ResourceId = R.raw.manualcar;
-        int video4ResourceId = R.raw.automatic;
-
-        // Set video URIs for VideoViews
-        Uri video1Uri = getRawResourceUri(video1ResourceId);
-        Uri video2Uri = getRawResourceUri(video2ResourceId);
-        Uri video3Uri = getRawResourceUri(video3ResourceId);
-        Uri video4Uri = getRawResourceUri(video4ResourceId);
-
-        // Set MediaController for each VideoView
-        MediaController mediaController1 = new MediaController(requireContext());
-        MediaController mediaController2 = new MediaController(requireContext());
-        MediaController mediaController3 = new MediaController(requireContext());
-        MediaController mediaController4 = new MediaController(requireContext());
-
-        videoView1.setMediaController(mediaController1);
-        videoView2.setMediaController(mediaController2);
-        videoView3.setMediaController(mediaController3);
-        videoView4.setMediaController(mediaController4);
-
-        // Set anchor views for proper positioning
-        mediaController1.setAnchorView(videoView1);
-        mediaController2.setAnchorView(videoView2);
-        mediaController3.setAnchorView(videoView3);
-        mediaController4.setAnchorView(videoView4);
-
-        // Set video URIs for VideoViews
-        videoView1.setVideoURI(video1Uri);
-        videoView2.setVideoURI(video2Uri);
-        videoView3.setVideoURI(video3Uri);
-        videoView4.setVideoURI(video4Uri);
-
-        // Set OnClickListener for each VideoView
-        videoView1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startVideoPlayback(videoView1);
-            }
-        });
-
-        videoView2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startVideoPlayback(videoView2);
-            }
-        });
-
-        videoView3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startVideoPlayback(videoView3);
-            }
-        });
-
-        videoView3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startVideoPlayback(videoView3);
-            }
-        });
+    private List<Clip> buildClips() {
+        List<Clip> clips = new ArrayList<>();
+        clips.add(new Clip(
+                "Jinsi ya Kutumia Mstelingi wakati wa kuendesha",
+                R.raw.mstelingi
+        ));
+        clips.add(new Clip(
+                "Aina za ajali zitokeazo mara kwa mara",
+                R.raw.ajali
+        ));
+        clips.add(new Clip(
+                "Jinsi ya Kuendesha Gari la Manual",
+                R.raw.manualcar
+        ));
+        clips.add(new Clip(
+                "Jinsi ya Kuendesha Gari la Automatic",
+                R.raw.automatic
+        ));
+        return clips;
     }
 
-    private void startVideoPlayback(VideoView videoView) {
-        // Start playing the video associated with the clicked VideoView
-        videoView.start();
-    }
+    private void setupMainPlayer(Clip clip) {
+        mainVideoView.stopPlayback();
+        Uri videoUri = getRawResourceUri(clip.videoResId);
+        mainVideoView.setVideoURI(videoUri);
+        mainVideoView.requestFocus();
 
+        mainVideoView.setOnPreparedListener(mp -> {
+            mainVideoView.setMediaController(mediaController);
+            mediaController.setAnchorView(mainVideoView);
+            mainVideoView.start();
+        });
+
+        currentTitleTextView.setText(clip.title);
+    }
 
     private Uri getRawResourceUri(int resourceId) {
         return new Uri.Builder()
@@ -115,6 +98,57 @@ public class ClipsFragment extends Fragment {
                 .build();
     }
 
+    private static class Clip {
+        final String title;
+        final int videoResId;
+
+        Clip(String title, int videoResId) {
+            this.title = title;
+            this.videoResId = videoResId;
+        }
+    }
+
+    private interface OnClipClickListener {
+        void onClipClick(Clip clip);
+    }
+
+    private static class ClipsAdapter extends RecyclerView.Adapter<ClipsAdapter.ClipViewHolder> {
+
+        private final List<Clip> clips;
+        private final OnClipClickListener listener;
+
+        ClipsAdapter(List<Clip> clips, OnClipClickListener listener) {
+            this.clips = clips;
+            this.listener = listener;
+        }
+
+        @NonNull
+        @Override
+        public ClipViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+            View view = LayoutInflater.from(parent.getContext())
+                    .inflate(R.layout.item_clip, parent, false);
+            return new ClipViewHolder(view);
+        }
+
+        @Override
+        public void onBindViewHolder(@NonNull ClipViewHolder holder, int position) {
+            Clip clip = clips.get(position);
+            holder.titleTextView.setText(clip.title);
+            holder.itemView.setOnClickListener(v -> listener.onClipClick(clip));
+        }
+
+        @Override
+        public int getItemCount() {
+            return clips.size();
+        }
+
+        static class ClipViewHolder extends RecyclerView.ViewHolder {
+            final TextView titleTextView;
+
+            ClipViewHolder(@NonNull View itemView) {
+                super(itemView);
+                titleTextView = itemView.findViewById(R.id.clipTitle);
+            }
+        }
+    }
 }
-
-

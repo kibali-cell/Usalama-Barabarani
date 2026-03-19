@@ -63,7 +63,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:fontFamily="@font/poppins_bold"
-                            android:text="Quiz"
+                            android:text="Jaribio"
                             android:textColor="@color/primary"
                             android:textSize="22sp"
                             android:textStyle="bold" />
@@ -74,7 +74,7 @@
                             android:layout_below="@+id/QuizDesc"
                             android:fontFamily="@font/poppins_italic"
                             android:layout_margin="2dp"
-                            android:text="Not yet available, Coming Soon..."
+                            android:text="Jipime na Jaribio la Sheria za Barabarani"
                             android:textColor="@color/highlight"
                             android:textSize="13sp" />
                     </LinearLayout>

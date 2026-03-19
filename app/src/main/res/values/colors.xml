@@ -13,4 +13,6 @@
     <color name="iconbackground">#EAEEF7</color>
     <color name="active">#D8E3F7</color>
     <color name="heading">#D3E4FE</color>
+    <color name="quiz_correct">#2E7D32</color>
+    <color name="quiz_error">#C62828</color>
 </resources>
