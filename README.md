@@ -4,13 +4,13 @@
 
 Usalama Barabarani is a comprehensive Android application designed to support drivers at all skill levels. Whether you're just starting your driving journey or looking to enhance your existing skills, this app provides the resources you need to become a confident, safe, and responsible driver.
 
-## 📱 Features
+## Features
 
 <p align="center">
   <img src="screenshots/Beige Minimalist Fashion Product Promotion Facebook Ad (2).png" alt="App Features Overview" width="600"/>
 </p>
 
-### 🏠 Home Page
+### Home Page
 Navigate through the App with simple navigation design
 <p align="center">
   <img src="screenshots/Screenshot_20250221_175711.jpg" alt="Home Screen" width="250"/>
@@ -23,7 +23,7 @@ Browse through an extensive collection of road signs categorized by type (warnin
   <img src="screenshots/roadsigns.jpg" alt="Road Signs Screen" width="250"/>
 </p>
 
-### 🎬 Interactive Video Tutorials
+###  Interactive Video Tutorials
 Access professionally produced video tutorials covering essential driving skills:
 - Vehicle controls and basic operations
 - Parking techniques (parallel, reverse, angle)
@@ -46,7 +46,7 @@ Test your understanding with interactive quizzes featuring:
   <img src="screenshots/Screenshot_20250221_175726.jpg" alt="Quiz Screen" width="250"/>
 </p>
 
-### 🚨 Dashboard Alert Guide
+### Dashboard Alert Guide
 Comprehensive guide to dashboard indicators including:
 - Warning lights and their urgency levels
 - Maintenance indicators
@@ -57,7 +57,7 @@ Comprehensive guide to dashboard indicators including:
   <img src="screenshots/lights.jpg" alt="Dashboard Alerts Screen" width="250"/>
 </p>
 
-### 🛡️ Defensive Driving Techniques
+### Defensive Driving Techniques
 Learn proactive safety strategies through:
 - Hazard perception exercises
 - Weather-specific driving adaptations
@@ -68,7 +68,7 @@ Learn proactive safety strategies through:
   <img src="screenshots/Screenshot_20250221_175735.jpg" alt="Defensive Driving Screen" width="250"/>
 </p>
 
-## 🚀 Getting Started
+## Getting Started
 
 ```bash
 # Clone the repository
@@ -87,22 +87,22 @@ cd Usalama-Barabarani
 - JDK 11+
 - Minimum Android version: 5.0 (Lollipop)
 
-## 🔄 Upcoming Updates
+## Upcoming Updates
 
 - Added offline mode for accessing content without internet connection
 - Implemented dark mode for comfortable nighttime viewing
 - Integrated progress tracking across all learning modules
 - Enhanced quiz system with more realistic scenarios
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions from developers of all skill levels! Check out our [contribution guidelines](CONTRIBUTING.md) to get started.
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 Special thanks to:
 - Our beta testers for their valuable feedback
